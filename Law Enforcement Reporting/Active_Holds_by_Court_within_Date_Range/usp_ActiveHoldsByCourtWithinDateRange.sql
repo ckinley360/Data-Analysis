@@ -51,7 +51,7 @@ WHERE BillingEndDate IS NULL;
 /*Create a "tally table" for the booking days. This breaks up the booking date ranges (InDate & OutDate)
   into individual days (BookingDay) to allow day-level calculations. Algorithm was inspired by 
   Dwain Camps' algorithm explained in his article: https://dwaincsql.com/2014/03/27/tally-tables-in-t-sql/
-  Thank you to Luis Cazares on SQLServerCentral.com for bringing this algorithm to my attention.*/
+  Thank you to Luis Cazares on SQLServerCentral.com for sharing this algorithm with me.*/
 TRUNCATE TABLE TableB; --Clear out old data.
 
 /*Create tally table.*/
